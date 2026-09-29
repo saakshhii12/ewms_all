@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: Inter, 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --color-ewm-teal-25: #f7fffd;
+  --color-ewm-teal-50: #f0fdfa;
+  --color-ewm-teal-100: #ccfbf1;
+  --color-ewm-teal-200: #99f6e4;
+  --color-ewm-teal-500: #14b8a6;
+  --color-ewm-teal-600: #0d9488;
+  --color-ewm-teal-700: #0f766e;
+  --color-ewm-teal-800: #115e59;
+  --color-ewm-slate-50: #f8fafc;
+  --color-ewm-slate-100: #f1f5f9;
+  --color-ewm-slate-200: #e2e8f0;
+  --color-ewm-slate-400: #94a3b8;
+  --color-ewm-slate-500: #64748b;
+  --color-ewm-slate-600: #475569;
+  --color-ewm-slate-700: #334155;
+  --color-ewm-slate-800: #1e293b;
+  --color-ewm-slate-900: #0f172a;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at 78% -10%, rgba(20, 184, 166, 0.08), transparent 28rem),
+    var(--color-ewm-slate-50);
+  color: var(--color-ewm-slate-800);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a,
+select,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--color-ewm-teal-100);
+  color: var(--color-ewm-teal-800);
+}
